@@ -1,0 +1,59 @@
+ <div class="display" align="center">
+              <table class="table table-bordered table-responsive" style="display: inline;margin-left: 5px;" *ngFor="let detail of dataArray">
+            <tr>
+              <td>
+                 <img  src={{detail.imagePath}}{{detail.imageName}}  />
+              </td>
+            </tr>
+            <tr>
+              <td class="name">Name: {{detail.name}}</td>
+            </tr>
+            <tr>
+              <td class="price">INR :{{detail.price}}</td>
+            </tr>
+             <tr>
+                 <td>
+                     <button type="button"   class="btn" ><b>Add to cart</b></button>
+                 </td>
+               </tr><br><hr>
+          </table>
+     </div>
+
+
+
+img {
+    border : 1px solid ;
+    border-radius: 4px;
+    padding: 4px;
+    width: 300px;
+    height: 300px;
+}
+.name {
+    font-style:normal;
+    font-size: 25px;
+    font-family: Arial, Helvetica;
+    color: blue;
+}
+
+.price {
+    font-family: 'Times New Roman', Times;
+    font-size: 20px;
+}
+.display {
+    background-color: antiquewhite;
+}
+.btn {
+    background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
